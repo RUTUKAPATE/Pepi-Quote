@@ -4,12 +4,13 @@
 -- ftd.column:
 
 -- pepi.page: Hey There!
-body: You can never understand one language until you understand atleast two. This is the start and what else you will want.
+body: There is nothing impossible to those who will try.
 img1: $assets.files.author.jpg
 author: Amit Upadhya
 img2: $assets.files.fastn-logo.png
 company-name: FifthTry
-
+text-color: $pepi.monochrome-dark
+bg-color: $pepi.monochrome-light
 -- pepi.main: Quote
 
 -- end: ftd.column
