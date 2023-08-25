@@ -1,0 +1,122 @@
+-- import: my-types
+
+-- component page:
+caption title:
+body body:
+string author:
+string company-name:
+ftd.image-src img1:
+ftd.image-src img2:
+children wrap:
+
+-- ftd.container:
+width.fixed.px: 1000
+height.fixed.px: 500
+background.solid: lightgrey
+border-width.px: 5
+border-color: lightgrey
+border-radius.px: 100
+margin-vertical.px: 50
+margin-horizontal.px: 50 
+padding.px: 50
+margin-top.px: 100
+types: $my-types.types
+
+-- ftd.container:
+width.fixed.px: 900
+height.fixed.px: 400
+background.solid: white
+border-width.px: 5
+border-color: white
+border-radius.px: 100
+
+-- ftd.text: $page.title
+text-align: center
+margin-top.px: 60
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
+
+-- ftd.text: $page.body
+text-align: center
+padding.px: 20
+role: $inherited.types.heading-small
+color: $inherited.colors.text-strong
+
+-- ftd.row:
+spacing.fixed.px: 400
+align-content: center
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- ftd.image: 
+src: $page.img1
+link: https://www.linkedin.com/in/amitu/
+width.fixed.px: 90
+height.fixed.px: 90
+border-radius.percent: 50
+
+-- ftd.text: $page.author
+text-align: center
+padding-top.px: 35 
+role: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- ftd.text: $page.company-name
+text-align: center
+padding-top.px: 35
+role: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+
+-- ftd.image:
+src: $page.img2
+link: https://fastn.com
+width.fixed.px: 90
+height.fixed.px: 90
+border-radius.percent: 50
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- ftd.column:
+width: fill-container
+children: $page.wrap
+
+-- end: ftd.column
+
+-- end: ftd.container
+
+-- end: ftd.container
+
+-- end: page
+
+-- component main:
+caption title:
+children wrap:
+
+-- ftd.container:
+width.fixed.px: 300
+height.fixed.px: 130
+background.solid: grey
+border-width.px: 5
+border-color: grey
+border-radius.px: 100
+margin-horizontal.px: 400
+margin-top.px: -590
+types: $my-types.types
+
+-- ftd.text: $main.title
+text-align: center
+margin.px: 30
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
+
+-- end: ftd.container
+
+-- end: main
