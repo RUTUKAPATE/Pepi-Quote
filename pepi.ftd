@@ -8,14 +8,18 @@ string company-name:
 ftd.image-src img1:
 ftd.image-src img2:
 children wrap:
+ftd.color text-color: $inherited.colors.text-strong
+ftd.color bg-color: $inherited.colors.background.base
+ftd.color border-color: $inherited.colors.border-strong
 
 -- ftd.container:
-width.fixed.px: 1000
-height.fixed.px: 500
+width.fixed.px: 700
+height.fixed.px: 400
 background.solid: lightgrey
+color: $page.text-color
 border-width.px: 5
 border-color: lightgrey
-border-radius.px: 100
+border-radius.px: 90
 margin-vertical.px: 50
 margin-horizontal.px: 50 
 padding.px: 50
@@ -23,27 +27,23 @@ margin-top.px: 100
 types: $my-types.types
 
 -- ftd.container:
-width.fixed.px: 900
-height.fixed.px: 400
-background.solid: white
+width.fixed.px: 600
+height.fixed.px: 300
+background.solid: $page.bg-color
+color: $page.text-color
 border-width.px: 5
 border-color: white
-border-radius.px: 100
-
--- ftd.text: $page.title
-text-align: center
-margin-top.px: 60
-role: $inherited.types.heading-large
-color: $inherited.colors.text-strong
+border-radius.px: 90
 
 -- ftd.text: $page.body
 text-align: center
 padding.px: 20
-role: $inherited.types.heading-small
+margin-top.px: 30
+role: $inherited.types.heading-medium
 color: $inherited.colors.text-strong
 
 -- ftd.row:
-spacing.fixed.px: 400
+spacing.fixed.px: 200
 align-content: center
 
 -- ftd.row:
@@ -52,15 +52,15 @@ spacing.fixed.px: 10
 -- ftd.image: 
 src: $page.img1
 link: https://www.linkedin.com/in/amitu/
-width.fixed.px: 90
-height.fixed.px: 90
+width.fixed.px: 50
+height.fixed.px: 50
 border-radius.percent: 50
 
 -- ftd.text: $page.author
 text-align: center
-padding-top.px: 35 
+padding-top.px: 15
 role: $inherited.types.copy-regular
-color: $inherited.colors.text-strong
+color: $page.text-color
 
 -- end: ftd.row
 
@@ -69,15 +69,15 @@ spacing.fixed.px: 10
 
 -- ftd.text: $page.company-name
 text-align: center
-padding-top.px: 35
+padding-top.px: 15
 role: $inherited.types.copy-regular
-color: $inherited.colors.text-strong
+color: $page.text-color
 
 -- ftd.image:
 src: $page.img2
 link: https://fastn.com
-width.fixed.px: 90
-height.fixed.px: 90
+width.fixed.px: 50
+height.fixed.px: 50
 border-radius.percent: 50
 
 -- end: ftd.row
@@ -99,24 +99,36 @@ children: $page.wrap
 -- component main:
 caption title:
 children wrap:
+ftd.color text-color: $inherited.colors.text-strong
+ftd.color bg-color: $inherited.colors.background.base
+ftd.color border-color: $inherited.colors.border-strong
 
 -- ftd.container:
 width.fixed.px: 300
-height.fixed.px: 130
+height.fixed.px: 100
+color: $main.text-color
 background.solid: grey
 border-width.px: 5
 border-color: grey
-border-radius.px: 100
-margin-horizontal.px: 400
-margin-top.px: -590
+border-radius.px: 90
+margin-horizontal.px: 250
+margin-top.px: -470
 types: $my-types.types
 
 -- ftd.text: $main.title
 text-align: center
-margin.px: 30
+margin.px: 20
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
 
 -- end: ftd.container
 
 -- end: main
+
+-- ftd.color monochrome-dark:
+light: black
+dark: white
+
+-- ftd.color monochrome-light:
+light: white
+dark: black
