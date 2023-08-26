@@ -10,15 +10,13 @@ ftd.image-src img2:
 children wrap:
 ftd.color text-color: $inherited.colors.text-strong
 ftd.color bg-color: $inherited.colors.background.base
-ftd.color border-color: $inherited.colors.border-strong
 
 -- ftd.container:
 width.fixed.px: 700
 height.fixed.px: 400
-background.solid: lightgrey
+background.solid: $page.bg-color
 color: $page.text-color
 border-width.px: 5
-border-color: lightgrey
 border-radius.px: 90
 margin-vertical.px: 50
 margin-horizontal.px: 50 
@@ -32,7 +30,6 @@ height.fixed.px: 300
 background.solid: $page.bg-color
 color: $page.text-color
 border-width.px: 5
-border-color: white
 border-radius.px: 90
 
 -- ftd.text: $page.body
@@ -101,15 +98,13 @@ caption title:
 children wrap:
 ftd.color text-color: $inherited.colors.text-strong
 ftd.color bg-color: $inherited.colors.background.base
-ftd.color border-color: $inherited.colors.border-strong
 
 -- ftd.container:
 width.fixed.px: 300
 height.fixed.px: 100
 color: $main.text-color
-background.solid: grey
+background.solid: $main.bg-color
 border-width.px: 5
-border-color: grey
 border-radius.px: 90
 margin-horizontal.px: 260
 margin-top.px: -470
@@ -125,10 +120,3 @@ color: $inherited.colors.text-strong
 
 -- end: main
 
--- ftd.color monochrome-dark:
-light: black
-dark: white
-
--- ftd.color monochrome-light:
-light: white
-dark: black

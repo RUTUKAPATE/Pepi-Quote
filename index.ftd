@@ -3,14 +3,14 @@
 
 -- ftd.column:
 
--- pepi.page: Hey There!
-body: There is nothing impossible to those who will try.
+-- pepi.page: Hey There! 
 img1: $assets.files.author.jpg
 author: Alexander
 img2: $assets.files.company-logo.png
 company-name: Company Name
-text-color: $pepi.monochrome-dark
-bg-color: $pepi.monochrome-light
+
+There is nothing impossible to those who will try.
+
 -- pepi.main: Quote
 
 -- end: ftd.column
