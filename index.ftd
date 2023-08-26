@@ -8,7 +8,7 @@ body: There is nothing impossible to those who will try.
 img1: $assets.files.author.jpg
 author: Alexander
 img2: $assets.files.fastn-logo.png
-company-name: FifthTry
+company-name: Company Name
 text-color: $pepi.monochrome-dark
 bg-color: $pepi.monochrome-light
 -- pepi.main: Quote
