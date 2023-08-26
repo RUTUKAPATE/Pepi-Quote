@@ -4,6 +4,8 @@
 caption title:
 body body:
 string author:
+string link1:
+string link2:
 string company-name:
 ftd.image-src img1:
 ftd.image-src img2:
@@ -48,7 +50,7 @@ spacing.fixed.px: 10
 
 -- ftd.image: 
 src: $page.img1
-link: https://www.linkedin.com/in/amitu/
+link: $page.link1
 width.fixed.px: 50
 height.fixed.px: 50
 border-radius.percent: 50
@@ -72,7 +74,7 @@ color: $page.text-color
 
 -- ftd.image:
 src: $page.img2
-link: https://fastn.com
+link: $page.link2
 width.fixed.px: 50
 height.fixed.px: 50
 border-radius.percent: 50
